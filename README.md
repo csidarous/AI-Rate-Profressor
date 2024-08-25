@@ -10,7 +10,7 @@ AI Rate My Professor is an AI-powered web application that leverages Retrieval-A
 4. [Contact](#Contributors)
 
 ## Live Demo
-Check out the live demo of the AI Rate My Professor application [here](#https://ai-rate-profressor.vercel.app).
+Check out the live demo of the AI Rate My Professor application [here](https://ai-rate-profressor.vercel.app).
 
 ## Features
 - **AI-Driven Reviews:** Get AI-generated reviews and ratings based on the latest and most relevant data.

@@ -1,0 +1,124 @@
+{
+  "reviews": [
+    {
+      "professor": "Dr. John Smith",
+      "subject": "CS101: Introduction to Programming",
+      "stars": 5,
+      "review": "Excellent professor with clear and concise lectures. Highly recommended!"
+    },
+    {
+      "professor": "Dr. Emily Johnson",
+      "subject": "MATH150: Calculus I",
+      "stars": 4,
+      "review": "Very knowledgeable and approachable, but the exams are tough."
+    },
+    {
+      "professor": "Dr. Michael Davis",
+      "subject": "HIST101: World History I",
+      "stars": 3,
+      "review": "Interesting lectures but heavy reading load."
+    },
+    {
+      "professor": "Dr. Sarah Lee",
+      "subject": "PHYS101: General Physics",
+      "stars": 5,
+      "review": "Dr. Lee explains complex concepts very clearly. Great professor!"
+    },
+    {
+      "professor": "Dr. Robert Brown",
+      "subject": "CHEM101: General Chemistry",
+      "stars": 4,
+      "review": "Good teacher, but the lab work is intense."
+    },
+    {
+      "professor": "Dr. Karen Taylor",
+      "subject": "PSY101: Introduction to Psychology",
+      "stars": 4,
+      "review": "Engaging and insightful lectures. Participation is encouraged."
+    },
+    {
+      "professor": "Dr. William Harris",
+      "subject": "BIO101: Introduction to Biology",
+      "stars": 3,
+      "review": "Challenging course, but Dr. Harris is very helpful during office hours."
+    },
+    {
+      "professor": "Dr. Jennifer Clark",
+      "subject": "ENGL101: English Composition",
+      "stars": 5,
+      "review": "Great professor who provides detailed feedback on essays."
+    },
+    {
+      "professor": "Dr. David Martin",
+      "subject": "ECON101: Principles of Economics",
+      "stars": 2,
+      "review": "Lectures are dry and hard to follow. Exams are difficult."
+    },
+    {
+      "professor": "Dr. Linda Lewis",
+      "subject": "SOC101: Introduction to Sociology",
+      "stars": 4,
+      "review": "Interesting and relevant topics. Dr. Lewis makes the class enjoyable."
+    },
+    {
+      "professor": "Dr. Thomas Young",
+      "subject": "PHIL101: Introduction to Philosophy",
+      "stars": 3,
+      "review": "Thought-provoking lectures, but the grading is tough."
+    },
+    {
+      "professor": "Dr. Barbara Adams",
+      "subject": "ART101: Art History",
+      "stars": 5,
+      "review": "Passionate about art and very knowledgeable. A must-take course!"
+    },
+    {
+      "professor": "Dr. Charles Walker",
+      "subject": "MATH250: Linear Algebra",
+      "stars": 4,
+      "review": "Challenging but rewarding course. Dr. Walker is an excellent teacher."
+    },
+    {
+      "professor": "Dr. Nancy Robinson",
+      "subject": "CS201: Algorithms",
+      "stars": 5,
+      "review": "Dr. Robinson's explanations are top-notch. Best CS course I've taken."
+    },
+    {
+      "professor": "Dr. Kevin Hall",
+      "subject": "HIST202: American History",
+      "stars": 3,
+      "review": "Interesting content, but the lectures can be monotonous."
+    },
+    {
+      "professor": "Dr. Jessica Moore",
+      "subject": "PSY201: Developmental Psychology",
+      "stars": 4,
+      "review": "Great professor, but make sure to keep up with the readings."
+    },
+    {
+      "professor": "Dr. Daniel Allen",
+      "subject": "CHEM202: Organic Chemistry",
+      "stars": 2,
+      "review": "Extremely difficult course. Dr. Allen is knowledgeable but not the best at explaining."
+    },
+    {
+      "professor": "Dr. Laura Scott",
+      "subject": "BIO202: Genetics",
+      "stars": 4,
+      "review": "Interesting material and Dr. Scott is very passionate about the subject."
+    },
+    {
+      "professor": "Dr. James Perez",
+      "subject": "MATH350: Differential Equations",
+      "stars": 5,
+      "review": "One of the best math professors. Explains complex topics clearly."
+    },
+    {
+      "professor": "Dr. Patricia King",
+      "subject": "ENGL202: American Literature",
+      "stars": 4,
+      "review": "Engaging discussions and well-structured lectures."
+    }
+  ]
+}

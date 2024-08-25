@@ -3,14 +3,14 @@
 AI Rate My Professor is an AI-powered web application that leverages Retrieval-Augmented Generation (RAG) to provide insightful and personalized reviews of professors. This application uses Pinecone for vector search, LangChain for chaining language models, and is built with Next.js and React.
 
 ## Table of Contents
-<!-- 1. [Live Demo](#live-demo) -->
+1. [Live Demo](#live-demo)
 1. [Features](#features)
 2. [Technology Stack](#technology-stack)
 3. [Future Improvements](#future-improvements)
 4. [Contact](#Contributors)
 
-<!-- ## Live Demo
-Check out the live demo of the AI Rate My Professor application [](#). -->
+## Live Demo
+Check out the live demo of the AI Rate My Professor application [here](#https://ai-rate-profressor.vercel.app).
 
 ## Features
 - **AI-Driven Reviews:** Get AI-generated reviews and ratings based on the latest and most relevant data.
@@ -34,6 +34,6 @@ Check out the live demo of the AI Rate My Professor application [](#). -->
 - **Analytics Dashboard:** Add an analytics feature for tracking review trends and professor ratings over time.
 
 ## Contributors
-- **[Christopher Sidarous]**:  
-- **[Isaac Shaker]**:
-- **[Nicholas Lorenzi]**: 
+- **[Christopher Sidarous]**: Deployment and help with User Interface.
+- **[Isaac Shaker]**:  Backend; implementing Open AI with RAG and Picone.
+- **[Nicholas Lorenzi]**: Designed Frontend and helped with User Interface.

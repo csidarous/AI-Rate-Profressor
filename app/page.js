@@ -1,10 +1,10 @@
 "use client";
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Chat from './pages/Chat';
-import Help from './pages/Help';
-import Settings from './pages/Settings';
+import Home from './pages/home';
+import Chat from './pages/chat';
+import Help from './pages/help';
+// import Settings from './pages/Settings';
 import Navbar from './components/Navbar'; 
 import { Box } from '@mui/material';
 

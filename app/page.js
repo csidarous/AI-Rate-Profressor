@@ -3,6 +3,11 @@ import { Stream } from "openai/streaming";
 import { useState } from "react";
 import { Box, Button, TextField, Stack } from "@mui/material/";
 import Markdown from "react-markdown";
+import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Saved from './pages/Saved'
+import Help from './pages/Help'
+import Settings from './pages/Settings'
 
 export default function Home() {
   const [messages, setMessages] = useState([
@@ -56,6 +61,7 @@ export default function Home() {
   };
 
   return (
+      
     <Box
       width="100vw"
       height="100vh"
@@ -64,10 +70,23 @@ export default function Home() {
       justifyContent="center"
       alignItems="center"
     >
+      <Router>
+        <Box position="absolute" top="30px" left="20px" zIndex={1}>
+          <Navbar></Navbar>
+            <Routes>
+              <Route path='/' exact component={Home}></Route>  
+              <Route path='/saved' component={Saved}></Route>  
+              <Route path='/help' component={Help}></Route>  
+              <Route path='/Settings' component={Settings}></Route>  
+            </Routes>
+        </Box>
+      </Router>
+      
+
       <Stack
         direction="column"
-        width="500px"
-        height="700px"
+        width="1000px"
+        height="800px"
         border="1px solid black"
         p={2}
         spacing={3}

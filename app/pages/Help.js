@@ -24,7 +24,7 @@ function Help() {
           marginBottom: '30px',
         }}
       >
-        AI Rate My Professor - Help & FAQs
+        AI Rate My Professor - FAQs
       </Typography>
 
       <Box width="80%" maxWidth="800px">
@@ -90,7 +90,7 @@ function Help() {
           </AccordionSummary>
           <AccordionDetails>
             <Typography variant="body1" sx={{ color: '#555' }}>
-              We're working on adding more features, including school-specific ratings, detailed professor reviews, and the ability to compare professors. Our goal is to make this the most comprehensive professor rating platform available.
+              We are working on adding more features, including school-specific ratings, detailed professor reviews, and the ability to compare professors. Our goal is to make this the most comprehensive professor rating platform available.
             </Typography>
           </AccordionDetails>
         </Accordion>

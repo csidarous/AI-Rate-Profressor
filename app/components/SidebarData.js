@@ -10,8 +10,8 @@ export const SidebarData = [
         cName: 'nav-text'
     }, 
     {
-        title: 'Saved',
-        path: '/saved',
+        title: 'Chat',
+        path: '/chat',
         icon: <IoIcons.IoIosBookmark />,
         cName: 'nav-text'
     }, 
@@ -21,10 +21,10 @@ export const SidebarData = [
         icon: <IoIcons.IoIosHelpCircle />,
         cName: 'nav-text'
     }, 
-    {
-        title: 'Settings',
-        path: '/settings',
-        icon: <IoIcons.IoIosSettings />,
-        cName: 'nav-text'
-    }
+    // {
+    //     title: 'Settings',
+    //     path: '/settings',
+    //     icon: <IoIcons.IoIosSettings />,
+    //     cName: 'nav-text'
+    // }
 ]

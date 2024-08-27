@@ -1,136 +1,27 @@
 "use client";
-import { Stream } from "openai/streaming";
-import { useState } from "react";
-import { Box, Button, TextField, Stack } from "@mui/material/";
-import Markdown from "react-markdown";
-import Navbar from "./components/Navbar";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Saved from './pages/Saved'
-import Help from './pages/Help'
-import Settings from './pages/Settings'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Chat from './pages/Chat';
+import Help from './pages/Help';
+import Settings from './pages/Settings';
+import Navbar from './components/Navbar'; 
+import { Box } from '@mui/material';
 
-export default function Home() {
-  const [messages, setMessages] = useState([
-    {
-      role: "assistant",
-      content:
-        "Hi! I'm the Rate My Professor support bot. How can I help you today?",
-    },
-  ]);
-
-  const [message, setMessage] = useState("");
-
-  const sendMessage = async () => {
-    setMessages([
-      ...messages,
-      { role: "user", content: message },
-      { role: "assistant", content: "" },
-    ]);
-    setMessage("");
-
-    const response = await fetch("/api/chat", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify([...messages, { role: "user", content: message }]),
-    }).then(async (res) => {
-      const reader = res.body.getReader();
-      const decoder = new TextDecoder();
-
-      let result = "";
-      return reader.read().then(function processText({ done, value }) {
-        if (done) {
-          return result;
-        }
-
-        const text = decoder.decode(value || Uint8Array(), { stream: true });
-
-        setMessages((messages) => {
-          let lastMessage = messages[messages.length - 1];
-          let otherMessages = messages.slice(0, messages.length - 1);
-          return [
-            ...otherMessages,
-            { ...lastMessage, content: lastMessage.content + text },
-          ];
-        });
-
-        return reader.read().then(processText);
-      });
-    });
-  };
-
+function App() {
   return (
-      
-    <Box
-      width="100vw"
-      height="100vh"
-      display="flex"
-      flexDirection="column"
-      justifyContent="center"
-      alignItems="center"
-    >
-      <Router>
-        <Box position="absolute" top="30px" left="20px" zIndex={1}>
-          <Navbar></Navbar>
-            <Routes>
-              <Route path='/' exact component={Home}></Route>  
-              <Route path='/saved' component={Saved}></Route>  
-              <Route path='/help' component={Help}></Route>  
-              <Route path='/Settings' component={Settings}></Route>  
-            </Routes>
-        </Box>
-      </Router>
-      
-
-      <Stack
-        direction="column"
-        width="1000px"
-        height="800px"
-        border="1px solid black"
-        p={2}
-        spacing={3}
-      >
-        <Stack
-          direction="column"
-          spacing={2}
-          flexGrow={1}
-          overflow="auto"
-          maxHeight="100%"
-        >
-          {messages.map((message, index) => (
-            <Box
-              key={index}
-              display="flex"
-              justifyContent={
-                message.role === "user" ? "flex-end" : "flex-start"
-              }
-            >
-              <Box
-                bgcolor={
-                  message.role === "user" ? "primary.main" : "secondary.main"
-                }
-                color="white"
-                p={1}
-                borderRadius={5}
-              >
-                <Markdown>{message.content}</Markdown>
-              </Box>
-            </Box>
-          ))}
-        </Stack>
-        <Stack direction="row" spacing={2}>
-          <TextField
-            label="Message"
-            fullWidth
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-          />
-          <Button variant="contained" color="primary" onClick={sendMessage}>
-            Send
-          </Button>
-        </Stack>
-      </Stack>
-    </Box>
+    <Router>
+      <Box position="absolute" top="30px" left="20px" zIndex={1}>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/chat" element={<Chat />} />
+          <Route path="/help" element={<Help />} />
+          {/* <Route path="/settings" element={<Settings />} /> */}
+        </Routes>
+      </Box>
+    </Router>
   );
 }
+
+export default App;

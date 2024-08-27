@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-function Home() {
+function Settings() {
   return (
     <div className='settings'> 
       <h1>Settings</h1>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Settings;

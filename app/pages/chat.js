@@ -1,14 +1,15 @@
-
 "use client";
 import { useState } from "react";
 import { Box, Button, TextField, Stack } from "@mui/material/";
 import Markdown from "react-markdown";
 
+
 export default function Chat() {
   const [messages, setMessages] = useState([
     {
       role: "assistant",
-      content: "Hi! I'm the Rate My Professor support bot. How can I help you today?",
+      content:
+        "Hi! I'm the Rate My Professor support bot. How can I help you today?",
     },
   ]);
 
@@ -55,6 +56,7 @@ export default function Chat() {
   };
 
   return (
+      
     <Box
       width="100vw"
       height="100vh"
@@ -63,6 +65,8 @@ export default function Chat() {
       justifyContent="center"
       alignItems="center"
     >
+      
+
       <Stack
         direction="column"
         width="1000px"
@@ -82,10 +86,14 @@ export default function Chat() {
             <Box
               key={index}
               display="flex"
-              justifyContent={message.role === "user" ? "flex-end" : "flex-start"}
+              justifyContent={
+                message.role === "user" ? "flex-end" : "flex-start"
+              }
             >
               <Box
-                bgcolor={message.role === "user" ? "primary.main" : "secondary.main"}
+                bgcolor={
+                  message.role === "user" ? "primary.main" : "secondary.main"
+                }
                 color="white"
                 p={1}
                 borderRadius={5}
